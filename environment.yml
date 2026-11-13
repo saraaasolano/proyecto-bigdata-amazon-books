@@ -1,0 +1,32 @@
+# Entorno del proyecto Big Data (insatisfacción del lector)
+# Versiones exactas con las que se ejecutó el proyecto.
+#
+#   conda env create -f environment.yml
+#   conda activate proyecto-bigdata
+#   python -m ipykernel install --user --name proyecto-bigdata 
+name: proyecto-bigdata
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12   # probado con 3.12.16
+  # Procesamiento distribuido y datos
+  - dask=2026.8.0
+  - distributed=2026.8.0
+  - bokeh>=3.1            #
+  - pandas=3.1.1
+  - pyarrow=26.0.1
+  - numpy
+  - python-duckdb=2.0.0
+  # Orquestación
+  - prefect=3.8.6
+  # Análisis y modelo
+  - scipy=1.18.1
+  - scikit-learn=1.9.1
+  - lightgbm=4.7.0
+  - matplotlib
+  - seaborn=0.13.2
+  # AWS y PostgreSQL (RDS)
+  - sqlalchemy=2.1.8
+  - psycopg2=2.9.13
+  # Notebooks
+  - ipykernel

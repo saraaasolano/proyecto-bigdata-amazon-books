@@ -1,0 +1,13 @@
+# Datos (se descargan de Kaggle; ver README)
+data/
+*.parquet
+
+# Archivos que genera Python, Jupyter o el sistema
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+dashboard/dashboard.log
+
+# Credenciales
+.env
