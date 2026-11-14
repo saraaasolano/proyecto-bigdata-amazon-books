@@ -4,7 +4,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 from dash import Input, Output, callback, dash_table, dcc, html
 
-from components.tarjerta_kpi import TarjetaKpi
+from components.tarjeta_kpi import TarjetaKpi
 from configuracion import COLORES, COLORES_ESTRELLAS, configuracion, estilo
 from servicios.repositorio_resenas import leer_filtros, repositorio
 
