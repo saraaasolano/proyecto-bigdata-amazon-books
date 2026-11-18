@@ -11,3 +11,9 @@ dashboard/dashboard.log
 
 # Credenciales
 .env
+
+# Datos crudos convertidos a Parquet (no se suben, pesan mucho)
+data/raw_parquet/
+
+# Sí subir los tiempos de la comparación CSV vs Parquet
+!flujo_analitica/archivos_csv/comparacion_formatos.csv
